@@ -26,7 +26,7 @@ public class exercises {
         // 1c. Print the map
 
         System.out.println(myFirstMap);
-        
+
         // 1d. Access an element in the map with .get
 
         System.out.println(myFirstMap.get(1));
