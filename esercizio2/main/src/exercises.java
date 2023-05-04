@@ -1,4 +1,3 @@
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -59,7 +58,7 @@ public class exercises {
         //     to do so
 
         for(Map.Entry<String, Double> entry : menuCostsInEuro.entrySet())  {
-                if (entry.getValue()< entry.getValue());
+                if (entry.getValue()> entry.getValue());
                 mostExpensiveMenuItemName=entry.getKey();
                 break;
             }

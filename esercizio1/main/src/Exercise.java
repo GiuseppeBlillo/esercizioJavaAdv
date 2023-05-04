@@ -89,12 +89,16 @@ public class Exercise {
 
 
         for (Integer number : numbers) {
-            int x = Collections.max(numbers);
-            max=x;
-            int y = Collections.min(numbers);
-            min=y;
+            if (number >= max+1){
+                max=number;
+            }
+            if(number <= min-1){
+                min=number;
+            }
             // Your code
         }
+            System.out.println(max);
+            System.out.println(min);
 
         if (max != 10 || min != 1) {
             System.out.println("3a. Incorrect min or max values");
