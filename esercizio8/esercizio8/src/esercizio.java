@@ -67,17 +67,17 @@ public class esercizio {
         speedMeter.put(hammerShark.getClass().getName(), hammerShark.swimSpeedMetersPerSecond());
         speedMeter.put(condor.getClass().getName(), condor.flySpeedMetersPerSecond());
 
-        String speedestAnimal = null;
+        String fastestAnimal = null;
         double min = Integer.MIN_VALUE;
 
         for (Map.Entry<String, Double> entry : speedMeter.entrySet()){
             if (entry.getValue() > min){
-            speedestAnimal= entry.getKey();
+            fastestAnimal= entry.getKey();
             min = entry.getValue();
             }
         }
 
-        System.out.println("The speedest animal is the " + speedestAnimal + " of this list");
+        System.out.println("The speedest animal is the " + fastestAnimal + " of this list");
         // Your code here
     }
 }
