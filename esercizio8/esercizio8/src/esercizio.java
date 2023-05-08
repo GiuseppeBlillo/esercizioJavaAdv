@@ -77,7 +77,7 @@ public class esercizio {
             }
         }
 
-        System.out.println("The speedest animal is the " + fastestAnimal + " of this list");
+        System.out.println("The fastest animal is the " + fastestAnimal + " of this list");
         // Your code here
     }
 }
