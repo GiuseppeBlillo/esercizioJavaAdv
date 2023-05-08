@@ -119,7 +119,7 @@ public class esercizio {
         Path myDirectoryPath = Path.of("myDirectory");
 
         try {
-            Files.createDirectory(myDirectoryPath);
+            //Files.createDirectory(myDirectoryPath);
             // Your code
             Files.writeString(PATH_IN_A_FOLDER, "Why am I in a folder?");
         } catch (Exception exception) {
