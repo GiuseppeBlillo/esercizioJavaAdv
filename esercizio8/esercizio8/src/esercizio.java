@@ -63,17 +63,21 @@ public class esercizio {
 
         Map<String, Double> speedMeter = new HashMap<>();
 
-        speedMeter.put(doggo.getClass().toString(), doggo.runSpeedMetersPerSecond());
-        speedMeter.put(hammerShark.getClass().toString(), hammerShark.swimSpeedMetersPerSecond());
-        speedMeter.put(condor.getClass().toString(), condor.flySpeedMetersPerSecond());
+        speedMeter.put(doggo.getClass().getName(), doggo.runSpeedMetersPerSecond());
+        speedMeter.put(hammerShark.getClass().getName(), hammerShark.swimSpeedMetersPerSecond());
+        speedMeter.put(condor.getClass().getName(), condor.flySpeedMetersPerSecond());
 
         String speedestAnimal = null;
+        double min = Integer.MIN_VALUE;
 
         for (Map.Entry<String, Double> entry : speedMeter.entrySet()){
-            if (entry.getValue() > entry.getValue());
+            if (entry.getValue() > min){
             speedestAnimal= entry.getKey();
+            min = entry.getValue();
+            }
         }
-            System.out.println(speedestAnimal);
+
+        System.out.println("The speedest animal is the " + speedestAnimal + " of this list");
         // Your code here
     }
 }
