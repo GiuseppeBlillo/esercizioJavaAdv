@@ -17,18 +17,24 @@ public class exercise {
     private static void exercise1() {
         System.out.println("Exercise 1:");
         List<String> list = new ArrayList<>(Arrays.asList("a", "b", "c", "a", "b", "c", "a", "b", "c"));
+        Set <String> set = new HashSet<>();
 
         List<String> list2 = new ArrayList<>();
+        set.addAll(list);
+        list2.addAll(set);
 
-        for (String i :list){
+
+        /*for (String i :list){
             if (!list2.contains(i)){
                 list2.add(i);
             } list = list2;
         }
 
+         */
+
         // Your code here
 
-        if (list.size() == 3) {
+        if (list2.size() == 3) {
             System.out.println("Exercise 1: Success");
         } else {
             System.out.println("Exercise 1: Failed");
@@ -66,13 +72,11 @@ public class exercise {
         // and store the counts in the Map `wordCount`, note you will need to first get the previous value
         // from the Map and then increment it by 1, if no previous value exists, use 0 as the previous value.
 
-        int count = 0;
-        for (String i : words){
-            wordCount.put("",count+1);
-            count++;
-        }
 
-        System.out.println(wordCount.values());
+        for (String i : words){
+            wordCount.put(i, wordCount.getOrDefault(i,0)+1);
+        }
+        System.out.println(wordCount);
         // Your code here
     }
 

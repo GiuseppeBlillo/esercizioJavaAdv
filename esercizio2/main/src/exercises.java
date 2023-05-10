@@ -57,11 +57,15 @@ public class exercises {
         //     use for(Map.Entry<String, Double> entry : menuCostsInEuro.entrySet()) and entry.getKey and entry.getValue
         //     to do so
 
+        double x = 0;
+
         for(Map.Entry<String, Double> entry : menuCostsInEuro.entrySet())  {
-                if (entry.getValue()> entry.getValue());
-                mostExpensiveMenuItemName=entry.getKey();
-                break;
+            if (entry.getValue()> x) {
+                mostExpensiveMenuItemName = entry.getKey();
+                x = entry.getValue();
             }
+        }
+        
         System.out.println(mostExpensiveMenuItemName);
 
         // Your code
