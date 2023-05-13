@@ -65,7 +65,7 @@ public class exercises {
                 x = entry.getValue();
             }
         }
-        
+
         System.out.println(mostExpensiveMenuItemName);
 
         // Your code

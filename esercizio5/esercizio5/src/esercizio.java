@@ -83,7 +83,7 @@ public class esercizio { public static void main(String[] args) {
         int x=0;
         try{
             int y = num1/x;
-            System.out.println(y);
+
         // Your catch blocks here
         } catch (NumberFormatException e) {
             System.out.println("Insert a valid number");
