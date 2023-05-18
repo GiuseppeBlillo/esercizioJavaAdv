@@ -41,6 +41,10 @@ public class esercizio {
         // Your code here
         Car alfa127 = new Car();
         alfa127.moveBackward(8);
+        alfa127.moveForward(19);
+        Boat b1 = new Boat();
+        b1.moveBackward(2);
+        b1.moveForward(17);
     }
 
     /**
@@ -58,8 +62,12 @@ public class esercizio {
     private static void exercise3() {
         System.out.println("\nExercise 3: ");
 
-        Instrument fender = new Instrument();
-        fender.play();
+        Instrument i1 = new Instrument("drums","percussion");
+        i1.play();
+        Guitar g1 = new Guitar("stratocaster", "fender");
+        g1.play();
+        Piano p1 = new Piano("synth", "roland");
+        p1.play();
 
         // Your code here
     }

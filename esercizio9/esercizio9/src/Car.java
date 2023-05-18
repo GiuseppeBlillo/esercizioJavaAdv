@@ -1,7 +1,7 @@
 class Car implements Movable{
     @Override
-    public void moveForward() {
-
+    public void moveForward(int x) {
+        System.out.println( "I'm moving forward with a speed of " + x + " km/h :D");
     }
 
     @Override
