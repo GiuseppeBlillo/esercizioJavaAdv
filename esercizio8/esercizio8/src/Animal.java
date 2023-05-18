@@ -1,7 +1,7 @@
-public class Animale {
+public class Animal {
     private double height, weight;
 
-    public Animale(double height, double weight) {
+    public Animal(double height, double weight) {
         this.height = height;
         this.weight = weight;
     }

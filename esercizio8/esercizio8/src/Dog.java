@@ -1,10 +1,10 @@
-public class Cane extends Animale{
+public class Dog extends Animal{
     String breed;
-    public Cane(double height, double weight) {
+    public Dog(double height, double weight) {
         super(height, weight);
     }
 
-    public Cane(double height, double weight, String breed) {
+    public Dog(double height, double weight, String breed) {
         super(height, weight);
         this.breed = breed;
     }

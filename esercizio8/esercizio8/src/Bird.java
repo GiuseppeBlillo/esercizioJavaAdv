@@ -1,4 +1,4 @@
-public class Bird extends Animale{
+public class Bird extends Animal{
     double wingspan;
     public Bird(double height, double weight) {
         super(height, weight);

@@ -1,4 +1,4 @@
-public class Fish extends Animale{
+public class Fish extends Animal{
     String species;
     public Fish(double height, double weight) {
         super(height, weight);

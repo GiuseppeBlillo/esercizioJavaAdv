@@ -22,7 +22,7 @@ public class esercizio {
     private static void exercise1() {
         System.out.println("\nExercise 1: ");
         // Your code here
-        Cane persie = new Cane(60, 45, "corso");
+        Dog persie = new Dog(60, 45, "corso");
 
         System.out.println("My dog is " + persie.getHeight() + "cm tall and weighs " + persie.getWeight() + "kg. Her breed is an half-breed with a " + persie.getBreed() + ".");
 
@@ -41,6 +41,11 @@ public class esercizio {
      */
     private static void exercise2() {
         System.out.println("\nExercise 2: ");
+        Fish pagliaccio = new Fish(3.0, 4.0);
+        System.out.println("the weight of the " + pagliaccio.getClass().getName().toLowerCase() + " is " + pagliaccio.getWeight());
+        Bird merlo = new Bird(4.0, 6.0);
+        merlo.setWingspan(7.0);
+        System.out.println("the wingspan of the " + merlo.getClass().getName().toLowerCase() + " is " + merlo.getWingspan());
         // Your code here
     }
 
@@ -57,7 +62,7 @@ public class esercizio {
      */
     private static void exercise3() {
         System.out.println("\nExercise 3: ");
-        Cane doggo =new Cane(30,40, "maltese");
+        Dog doggo =new Dog(30,40, "maltese");
         Fish hammerShark = new Fish(600, 85, "shark");
         Bird condor = new Bird (150, 15, 330);
 
@@ -77,7 +82,7 @@ public class esercizio {
             }
         }
 
-        System.out.println("The fastest animal is the " + fastestAnimal + " of this list");
+        System.out.println("The fastest animal is the " + fastestAnimal.toLowerCase() + " of this list");
         // Your code here
     }
 }
