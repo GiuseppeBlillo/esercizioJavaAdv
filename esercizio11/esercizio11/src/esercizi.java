@@ -5,17 +5,8 @@ import java.math.MathContext;
 public class esercizi {
     public static void main(String[] args) {
         exercise1();
-        System.out.println(Math.random()*100 > 50 ? "x is greater than or equal to 50" : "x is less than 50");
         exercise2();
-        Person p1 = new Person("Mario", 19 , "piazza Grande");
-        System.out.println(p1.toString());
         exercise3();
-        BigInteger y = new BigInteger("2000000000000000000000000000000000");
-        BigDecimal z = new BigDecimal("0.000000000000000000000000004");
-        BigInteger y1 = y.divide(new BigInteger("3"));
-        BigDecimal z1 = z.divide(new BigDecimal(Math.PI), MathContext.DECIMAL64);
-        System.out.println(y1);
-        System.out.println(z1);
     }
 
     /**
@@ -30,6 +21,7 @@ public class esercizi {
      */
     private static void exercise1() {
         System.out.println("\nExercise 1: ");
+        System.out.println(Math.random()*100 > 50 ? "x is greater than or equal to 50" : "x is less than 50");
         // Your code here
     }
 
@@ -47,6 +39,8 @@ public class esercizi {
      */
     private static void exercise2() {
         System.out.println("\nExercise 2: ");
+        Person p1 = new Person("Mario", 19 , "piazza Grande");
+        System.out.println(p1.toString());
         // Your code here
     }
     record Person(String x, int y, String z){
@@ -70,6 +64,12 @@ public class esercizi {
      */
     private static void exercise3() {
         System.out.println("\nExercise 3: ");
+        BigInteger y = new BigInteger("2000000000000000000000000000000000");
+        BigDecimal z = new BigDecimal("0.000000000000000000000000004");
+        BigInteger y1 = y.divide(new BigInteger("3"));
+        BigDecimal z1 = z.divide(new BigDecimal(Math.PI), MathContext.DECIMAL64);
+        System.out.println(y1);
+        System.out.println(z1);
         // Your code here
     }
 }
